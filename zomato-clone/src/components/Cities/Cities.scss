@@ -1,0 +1,40 @@
+.cities {
+  width: 100%;
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: normal;
+    span {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .cityContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+
+    .city {
+      width: 350px;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 10px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        
+      }
+    }
+  }
+}
